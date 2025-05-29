@@ -10,4 +10,5 @@ this the testing time to build the hole pipeline concept clear to build any kind
 
 
 # 29-05-2025 workflow
-1. setup the custuom exception file to handle the error to fix the issuses.
+1. setup the custom exception file to handle the error to fix the issuses.
+2. setup the custom logger file to check where error is occur.
