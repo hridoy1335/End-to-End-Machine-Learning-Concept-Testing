@@ -2,6 +2,7 @@ import sys
 from sensor.logger import logging
 from sensor.exception import SensorException
 from sensor.utils import push_data_from_mongo_db
+from sensor.pipeline.training_pipeline import TrainPipeline
 
 # check the logging and exception file is working or not
 
@@ -22,3 +23,12 @@ from sensor.utils import push_data_from_mongo_db
 #         logging.info('data push completed')
 #     except Exception as e:
 #         print(e)
+
+
+# training the pipeline for dataingestion
+if __name__ == "__main__":
+    try:
+        train_pipeline = TrainPipeline()
+        train_pipeline.run_pipeline()
+    except Exception as e:
+        print(e)

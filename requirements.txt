@@ -6,5 +6,7 @@ scikit-learn
 imblearn
 pymongo
 python-dotenv
+PyYAML
+certifi
 
 -e . # editable mode
